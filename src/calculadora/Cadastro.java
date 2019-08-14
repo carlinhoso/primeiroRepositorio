@@ -31,10 +31,10 @@ public class Cadastro {
         
         /**
          * método para cadastrar visitantes
-         * @param nome - indica o nome do visitante
+         * @param nome1 - indica o nome do visitante
          * @param localDeOrigem - indica de onde ele veio/mora
          */
-        public static void Visitante(String nome, String localDeOrigem){
+        public static void Visitante(String nome1, String localDeOrigem){
            
         }
 }
