@@ -45,9 +45,13 @@ public class Soma {
          * @return double - valor da soma
          */
         public double SomarDuasFrações(int n1, int n2, int n3, int n4){
-            double result = (n1/n2)+(n3/n4);
+            try {
+                 double result = (n1/n2)+(n3/n4);
             
             return result;
+            } catch (Exception e) {
+            }
+            return 0;
         }
     
 }

@@ -21,9 +21,14 @@ public class Multiplicação {
      * @return result - valor da multiplicação
      */
     public int MultiplicarDuasFrações(int n1, int n2, int n3, int n4){
+        try {
+            
         int result = (n1/n2)*(n3/n4);
         
         return result;
+        } catch (ArithmeticException e) {
+        }
+        return 0;
     }
     
     /**

@@ -21,10 +21,18 @@ public class Divisão {
      * @return result - valor da divisão
      */
     public double DividirFrações(int n1, int n2, int n3, int n4){
+        try {
+            
         double result = (n1/n2)/(n3/n4);
         
         return result;
-    }
+
+        } catch (ArithmeticException e) {
+        }
+        return 0;
+        
+    }   
+            
     
     /**
      * método para dividir dois inteiros
@@ -33,9 +41,15 @@ public class Divisão {
      * @return result - valor da divisão
      */
     public double DividirInteiros(int n1, int n2){
+        try {
+            
         double result= n1/n2;
         
         return result;
+        } catch (ArithmeticException e) {
+        }
+        return 0;
+        
     }
     
     /**
@@ -45,9 +59,13 @@ public class Divisão {
      * @return result - valor da divisão
      */
     public double DividirAoQuadrado(int n1, int n2){
-        double result = (n1*n1)/(n2*n2);
+        try {
+            double result = (n1*n1)/(n2*n2);
         
         return result;
+        } catch (ArithmeticException e) {
+        }
+        return 0;
     }
             
     
